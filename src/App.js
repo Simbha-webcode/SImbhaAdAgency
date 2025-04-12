@@ -15,11 +15,13 @@ import AdFilms from "./components/AdFilms";
 import ScrollToTop from "./components/ScrollToTop"; // Make sure this file exists
 import WhatsAppFloatingIcon from "./components/WhatsAppFloatingIcon";
 import Error from "./components/Error";
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   return (
     <ThemeProvider>
       <div className="font-inter">
+        <Analytics />
         <ScrollToTop />
         <Header />
         <Outlet />
