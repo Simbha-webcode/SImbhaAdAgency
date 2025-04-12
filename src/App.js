@@ -16,12 +16,14 @@ import ScrollToTop from "./components/ScrollToTop"; // Make sure this file exist
 import WhatsAppFloatingIcon from "./components/WhatsAppFloatingIcon";
 import Error from "./components/Error";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const App = () => {
   return (
     <ThemeProvider>
       <div className="font-inter">
         <Analytics />
+        <SpeedInsights />
         <ScrollToTop />
         <Header />
         <Outlet />
